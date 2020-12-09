@@ -1,4 +1,4 @@
-pip install pytest
+python -m pytest 
 from stuff import run_stuff
 
 def test_run_stuff():
