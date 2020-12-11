@@ -1,2 +1,2 @@
-pip install install-requires
-pip install requirements.txt
+py -m pip install -r requirements.txt
+
