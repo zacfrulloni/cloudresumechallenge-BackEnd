@@ -1,6 +1,6 @@
 import boto3
 import json
-dynamodb = boto3.resource('dynamodb')
+dynamodb = boto3.resource('dynamodb', endpoint_url="http://localhost:8000")
 table= dynamodb.Table('zacresumetable2')
 
 def lambda_handler(event, context):
