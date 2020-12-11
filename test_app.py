@@ -1,7 +1,6 @@
 import boto3
 import json
 dynamodb = boto3.resource('dynamodb')
-os.environ['AWS_DEFAULT_REGION'] = 'eu-west-2'
 table= dynamodb.Table('zacresumetable2')
 
 def lambda_handler(event, context):
@@ -16,3 +15,6 @@ def lambda_handler(event, context):
             'headers': {'Content-Type': 'application/json'}}
 print("UPDATING ITEM")
 print("response") 
+export AWS_REGION=eu-west-2
+
+
