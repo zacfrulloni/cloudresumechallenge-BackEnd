@@ -1,6 +1,6 @@
+region= "eu-west-2"
 import boto3
 import json
-region= "eu-west-2"
 dynamodb = boto3.resource('dynamodb')
 table= dynamodb.Table('zacresumetable2')
 
