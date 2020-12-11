@@ -15,6 +15,4 @@ def lambda_handler(event, context):
             'headers': {'Content-Type': 'application/json'}}
 print("UPDATING ITEM")
 print("response") 
-export AWS_REGION=eu-west-2
-
-
+set AWS_REGION=eu-west-2
