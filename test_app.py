@@ -1,5 +1,6 @@
 import boto3
 import json
+boto3.client('dynamodb', region_name='eu-west-2', endpoint_url='http://localhost:8000')
 dynamodb = boto3.resource('dynamodb')
 table= dynamodb.Table('zacresumetable2')
 
