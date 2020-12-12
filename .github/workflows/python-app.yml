@@ -25,5 +25,6 @@ jobs:
     - name: Install boto3
       run:  pip3 install boto3
     - name: Test with pytest
-      run: pip3 install pytest
+      run: |
+           pip3 install pytest
            python -m pytest
