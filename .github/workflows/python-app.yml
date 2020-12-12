@@ -29,6 +29,6 @@ jobs:
            pip3 install pytest
            python -m pytest
     - name: Run Unit tests
-    env:
+      env:
           SECRETS: ${{ secrets.SECRETS }}
-          run: ./gradlew test -Parg1=$SECRETS 
+      run: ./gradlew test -Parg1=$SECRETS 
