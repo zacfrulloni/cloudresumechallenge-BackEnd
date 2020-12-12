@@ -1,7 +1,7 @@
 import boto3
 import json
 dynamodb = boto3.resource('dynamodb')
-table= dynamodb.Table('zacresumetable2', region_name= 'eu-west-2')
+table= dynamodb.Table('zacresumetable2', region_name= 'eu-west-2', endpoint_url='http://localhost:8000')
 
 def lambda_handler(event, context):
     response= table.update_item(
