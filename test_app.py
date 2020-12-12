@@ -15,4 +15,4 @@ def lambda_handler(event, context):
             'headers': {'Content-Type': 'application/json'}}
 print("UPDATING ITEM")
 print("response") 
-print(list(dynamodb.table.all()))
+print(list(dynamodb.tables.all()))
