@@ -4,7 +4,7 @@ dynamodb = boto3.resource('dynamodb')
 table= dynamodb.Table('zacresumetable2')
 
 def lambda_handler(event, context):
-    my_region = os.environ['eu-west-2']
+    os.environ['AWS_DEFAULT_REGION'] = 'eu-west-2'
     response= table.update_item(
     Key= {'URL': 'zacresume.com'},
     UpdateExpression= "SET visits = visits + :increase",
@@ -16,4 +16,3 @@ def lambda_handler(event, context):
             'headers': {'Content-Type': 'application/json'}}
 print("UPDATING ITEM")
 print("response") 
-print("my_region")
