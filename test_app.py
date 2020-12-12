@@ -1,6 +1,5 @@
 import boto3
 import json
-set AWS_REGION= "eu-west-2"
 dynamodb = boto3.resource('dynamodb')
 table= dynamodb.Table('zacresumetable2')
 
