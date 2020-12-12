@@ -2,8 +2,6 @@ import boto3
 import json
 dynamodb = boto3.resource('dynamodb', endpoint_url='http://localhost:8000', region_name= 'eu-west-2')
 table= dynamodb.Table('zacresumetable2')
-os.environ["AWS_ACCESS_KEY_ID"] = "test"
-os.environ["AWS_SECRET_ACCESS_KEY"] = "test"
 
 def lambda_handler(event, context):
     response= table.update_item(
