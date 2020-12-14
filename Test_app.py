@@ -2,7 +2,7 @@ import boto3
 import json
 dynamodb = boto3.resource('dynamodb')
 table= dynamodb.Table('zacresumetable2')
-setx AWS_DEFAULT_REGION= 'eu-west-2'
+set AWS_DEFAULT_REGION= 'eu-west-2'
 
 def lambda_handler(event, context):
     response= table.update_item(
