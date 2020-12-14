@@ -1,7 +1,7 @@
 import boto3
 import json
 dynamodb = boto3.resource('dynamodb')
-set AWS_DEFAULT_REGION=us-west-2
+set AWS_DEFAULT_REGION=eu-west-2
 table= dynamodb.Table('zacresumetable2')
 
 def lambda_handler(event, context):
