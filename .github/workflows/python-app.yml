@@ -26,6 +26,7 @@ jobs:
         python -m pip install flake8 pytest
     - name: Install boto3
       run:  pip3 install boto3
+            region= eu-west-2
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
