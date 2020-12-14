@@ -36,5 +36,3 @@ jobs:
       run: |
         pip install pytest       
         pytest
-        os.environ['AWS_DEFAULT_REGION'] = 'eu-west-2'
-
