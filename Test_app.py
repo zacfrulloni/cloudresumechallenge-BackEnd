@@ -1,9 +1,9 @@
 import boto3
 import json
 dynamodb = boto3.resource('dynamodb')
-table= dynamodb.Table('zacresumetable2')
+table= dynamodb.Table('zacresumetable2', region_name= 'eu-west-2')
 
-def test_lambda_handler(event, context):
+def lambda_handler(event, context):
     response= table.update_item(
     Key= {'URL': 'zacresume.com'},
     UpdateExpression= "SET visits = visits + :increase",
