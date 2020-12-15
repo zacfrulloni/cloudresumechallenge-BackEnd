@@ -1,3 +1,4 @@
+import pytest
 import boto3
 import json
 dynamodb = boto3.resource('dynamodb', region_name= 'eu-west-2')
