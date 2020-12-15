@@ -3,7 +3,7 @@ import json
 dynamodb = boto3.resource('dynamodb', region_name= 'eu-west-2')
 table= dynamodb.Table('zacresumetable2')
 
-def Test_lambda_handler(event, context):
+def pytest_lambda_handler(event, context):
     response= table.update_item(
     Key= {'URL': 'zacresume.com'},
     UpdateExpression= "SET visits = visits + :increase",
