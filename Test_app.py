@@ -1,5 +1,4 @@
 import boto3
-[default]
 region= 'eu-west-2'
 import json
 dynamodb = boto3.resource('dynamodb')
